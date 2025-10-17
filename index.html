@@ -94,6 +94,28 @@
          </section>
     </main>
 
+    <footer>
+        <p>© 2025 Dorjé Pradhan. All rights reserved.</p>
+        <progress value="60" max="100">60%</progress>
+    </footer>
+
+    <template id="greeting-template">
+        <p>Hello, and welcome to my portfolio!</p>
+    </template>
+
+    <script>
+        // This is my Hello World custom element I promise I'm not cheating by using JS
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello world!");
+            }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
+
+    <hello-world></hello-world>
+
 </body>
 
 </html>
